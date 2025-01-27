@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavika Shinde - UI/UX Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f8fa;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #5c67f2, #7d5ce8);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        nav {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #5c67f2;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #5c67f2;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-card div {
+            padding: 20px;
+        }
+
+        .project-card h3 {
+            margin: 0 0 10px;
+            color: #5c67f2;
+        }
+
+        .project-card p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .skill-card h3 {
+            color: #5c67f2;
+        }
+
+        .contact {
+            background: #5c67f2;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact input, .contact textarea, .contact button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 15px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact input, .contact textarea {
+            background: white;
+        }
+
+        .contact button {
+            background: #7d5ce8;
+            color: white;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background: #6b4ed2;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bhavika Shinde</h1>
+        <p>Crafting elegant UI/UX designs that resonate with users</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Bhavika Shinde, a dedicated UI/UX Designer with a passion for creating meaningful and impactful user experiences. With certification from Seven Mentors Institute and hands-on experience in design tools and user research, I aim to bridge the gap between user needs and business goals through design.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <div>
+                    <h3>Travel Booking App</h3>
+                    <p>Seamless travel planning app with user-centered design principles. Wireframed and prototyped in Figma.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
+                <div>
+                    <h3>E-Commerce Website</h3>
+                    <p>Improved usability and responsiveness for an e-commerce platform, boosting user satisfaction by 20%.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <div>
+                    <h3>Personal Portfolio</h3>
+                    <p>Responsive portfolio website showcasing projects and skills, built with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill-card">
+                <h3>UI/UX Design</h3>
+                <p>Wireframing, prototyping, user research</p>
+            </div>
+            <div class="skill-card">
+                <h3>Design Tools</h3>
+                <p>Figma, Adobe XD, Sketch</p>
+            </div>
+            <div class="skill-card">
+                <h3>Front-End Development</h3>
+                <p>HTML, CSS, JavaScript basics</p>
+            </div>
+            <div class="skill-card">
+                <h3>Soft Skills</h3>
+                <p>Team collaboration, adaptability, communication</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Bhavika Shinde. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
